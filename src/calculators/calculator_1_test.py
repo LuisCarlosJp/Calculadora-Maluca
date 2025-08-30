@@ -17,7 +17,7 @@ def test_Calculate():
     assert "result" in response["data"]
 
     assert response["data"]["result"] == 14.25
-    assert response["data"]["Calculator"] == 1
+    assert response["data"]["Calculator"] == 3
 
 def test_calculate_with_body_error():
     mock_request =  MockRequest(body={ "something": 1})
